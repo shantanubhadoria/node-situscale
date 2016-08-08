@@ -9,7 +9,7 @@ This package allows you to set up asynchronous notifications for weight update n
 
 ## Install
 
-You can install this package either with `npm` or with `bower`.
+You can install this package either with `npm`.
 
 ### npm
 
