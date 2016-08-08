@@ -22,7 +22,7 @@ function startScanning() {
   });
 }
 
-setNotification(characteristic, status) {
+function setNotification(characteristic, status) {
   characteristic.notify(status, function(error) {
     if(error)
       console.error(error);
