@@ -107,6 +107,7 @@ setTimeout(function(){
     console.log('disconnected');
   }, 3000);
 });
+```
 
 ## License
 The MIT License
