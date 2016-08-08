@@ -5,7 +5,7 @@ Node.js interface for reading data from SITU® Smart Food Nutrition Scale over b
 ## Description
 This package allows you to set up asynchronous notifications for weight update notifications from SITU scale.
 
-SITU Scale: ![SITU Scale](/corpus/situscale.png)
+![SITU Scale](/corpus/situscale.png)
 
 ## Install
 
