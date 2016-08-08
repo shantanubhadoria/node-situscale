@@ -134,6 +134,7 @@ THE SOFTWARE.
 
 
 ##Copyrights and Trademarks
+![SITU® Scale][/corpus/situscale.png]
 All labels including SITU® Smart Food Nutrition are trademarks of their respective owners.
 Please refer http://situscale.com/copyrights-trademarks/ for trademark information.
 Permission has been sought and received from SITU to release this module under the MIT license.
