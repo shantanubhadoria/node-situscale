@@ -1,3 +1,4 @@
+// readWeight.js
 var SituScale = require('../index.js');
 
 var address = "C6:E3:C7:5E:FD:FC";

@@ -37,7 +37,7 @@ scale.searchScales(function(scale) {
 
 // Stop Searching after 3 seconds
 setTimeout(
-  scale.stopSearching,
+  scale.stopSearching(),
   3000
 );
 ```
