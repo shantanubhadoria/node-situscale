@@ -1,0 +1,35 @@
+{
+  "name": "situscale",
+  "version": "1.0.0",
+  "description": "Node.js interface for reading data from Situscale bluetooth weighing scale (http://situscale.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shantanubhadoria/node-situscale.git"
+  },
+  "keywords": [
+    "situscale",
+    "bluetooth",
+    "weighing",
+    "scale",
+    "bluetooth",
+    "smart",
+    "bluetooth",
+    "low",
+    "energy",
+    "BLE"
+  ],
+  "dependencies": {
+    "noble": "^1.6.0",
+    "async": "^2.0.1"
+  },
+  "author": "Shantanu Bhadoria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shantanubhadoria/node-situscale/issues"
+  },
+  "homepage": "https://github.com/shantanubhadoria/node-situscale#readme"
+}
