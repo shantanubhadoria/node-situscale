@@ -41,7 +41,7 @@ SituScale.prototype.stopSearching = function(callback) {
   noble.stopScanning(callback);
 };
 
-var onDisconnectEvents = Object();
+var onDisconnectEvents = {};
 SituScale.prototype.getAllWeights = function(callback) {
   let SituScale = this;
   startScanning();
@@ -52,7 +52,7 @@ SituScale.prototype.getAllWeights = function(callback) {
       onDisconnectEvents[peripheral.address] = true;
 
       peripheral.on('disconnect', function() {
-        console.log("Peripheral disconnected. Starting scan again.")
+        console.log("Peripheral disconnected. Starting scan again.");
 
         noble.stopScanning();
         noble.startScanning();
@@ -89,7 +89,7 @@ SituScale.prototype.getAllWeights = function(callback) {
         setNotification(weightNotifyCharacteristic, true);
     });
   }
-}
+};
 
 SituScale.prototype.getWeight = function(callback) {
   var situScale = this;
