@@ -1,6 +1,6 @@
 {
   "name": "situscale",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js interface for reading data from Situscale bluetooth weighing scale (http://situscale.com/).",
   "main": "index.js",
   "scripts": {

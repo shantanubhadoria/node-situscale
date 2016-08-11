@@ -9,7 +9,7 @@ This package allows you to set up asynchronous notifications for weight update n
 
 ## Install
 
-You can install this package either with `npm`.
+You can install this package with `npm`.
 
 ### npm
 
@@ -44,7 +44,7 @@ setTimeout(
 );
 ```
 
-## Receiving weight notifications from SITU scale
+## Receiving weight notifications from a specific SITU scale
 Once you know the address for your SITU scale you can receive weight notifications from it as and when they happen.
 Note that the weight is always received in grams and you must convert it to other unit of calculation if you need to.
 
@@ -57,6 +57,22 @@ var scaleInstance = new SituScale(address);
 scale.getWeight(function(weight){
   console.log(weight);
 });
+```
+
+## Receiving weight notifications from all the SITU scales in your vicinity (Avaliable since v1.0.4)
+If you wish to receive notifications from all available SITU scales in your vicinity without knowing the address of the
+SITU scales, then you may use the getAllWeights function.
+
+```javascript
+// readAll.js
+var SituScale = require('situscale');
+
+var scale = new SituScale();
+
+scale.getAllWeights(function(weight, scale) {
+  console.log("Scale with address: " + scale.address + ' notified weight of ' + weight + ' gms.');
+});
+
 ```
 
 ## Turning weight notifications on or off after connecting.
