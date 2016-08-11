@@ -41,6 +41,56 @@ SituScale.prototype.stopSearching = function(callback) {
   noble.stopScanning(callback);
 };
 
+var onDisconnectEvents = Object();
+SituScale.prototype.getAllWeights = function(callback) {
+  let SituScale = this;
+  startScanning();
+
+  noble.on('discover', function(peripheral) {
+
+    if(!(onDisconnectEvents[peripheral.address])) {
+      onDisconnectEvents[peripheral.address] = true;
+
+      peripheral.on('disconnect', function() {
+        console.log("Peripheral disconnected. Starting scan again.")
+
+        noble.stopScanning();
+        noble.startScanning();
+      });
+    }
+    getService(peripheral);
+  });
+
+  function getService(peripheral) {
+    peripheral.connect(function(error) {
+      if(error)
+        console.error(error);
+
+      peripheral.discoverServices(['6e400001b5a3f393e0a9e50e24dcca9e'], function(error, services) {
+        if(error)
+          console.error(error);
+
+        let weightService = services[0];
+        getWeight(weightService, peripheral);
+      });
+    });
+  }
+
+  function getWeight(weightService, peripheral) {
+    weightService.discoverCharacteristics(['6e400003b5a3f393e0a9e50e24dcca9e'], function(error, characteristics) {
+      if(error)
+        console.error(error);
+
+      let weightNotifyCharacteristic = characteristics[0];
+        weightNotifyCharacteristic.on('read', function(data, isNotification) {
+          callback(parseInt(data.toString(0)), peripheral);
+        });
+
+        setNotification(weightNotifyCharacteristic, true);
+    });
+  }
+}
+
 SituScale.prototype.getWeight = function(callback) {
   var situScale = this;
   startScanning();
