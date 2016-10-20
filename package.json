@@ -1,10 +1,20 @@
 {
-  "name": "node-situscale",
-  "version": "0.0.0",
-  "description": "node-situscale",
+  "name": "situscale",
+  "version": "2.0.0",
+  "description": "Node.js interface for reading data from Situscale bluetooth weighing scale (http://situscale.com/).",
   "license": "MIT",
-  "repository": "",
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shantanubhadoria/node-situscale.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shantanubhadoria/node-situscale/issues"
+  },
+  "homepage": "https://github.com/shantanubhadoria/node-situscale#readme",
+  "author": {
+    "name": "Shantanu Bhadoria",
+    "website": "https://www.shantanubhadoria.com"
+  },
   "keywords": [
     ""
   ],
@@ -19,7 +29,8 @@
     "build": "npm run clean && npm run lint && echo Using TypeScript && tsc --version && tsc --pretty",
     "test": "npm run build && mocha --compilers ts:ts-node/register --recursive test/**/*-spec.ts",
     "watch": "npm run build -- --watch",
-    "watch:test": "npm run test -- --watch"
+    "watch:test": "npm run test -- --watch",
+    "search": "npm run build && node lib/search.js"
   },
   "dependencies": {
     "noble": "^1.7.0"

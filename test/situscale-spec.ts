@@ -5,9 +5,9 @@ import {} from "mocha";
 
 const expect = chai.expect;
 
-describe("greeter", () => {
-  it("should greet with message", () => {
-    const situScale = new SituScale();
+describe("situscale", () => {
+  it("should return a instance of situscale", () => {
+    const situScale = new SituScale("friend");
     expect(situScale).to.be.instanceOf(SituScale);
   });
 });
