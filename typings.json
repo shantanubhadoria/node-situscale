@@ -1,4 +1,7 @@
 {
   "name": "node-situscale",
-  "dependencies": {}
+  "dependencies": {},
+  "globalDependencies": {
+    "noble": "registry:dt/noble#0.0.0+20160406120732"
+  }
 }
