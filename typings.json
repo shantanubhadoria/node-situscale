@@ -2,6 +2,7 @@
   "name": "node-situscale",
   "dependencies": {},
   "globalDependencies": {
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160602141504",
     "noble": "github:shantanubhadoria/DefinitelyTyped/noble/noble.d.ts#d28eff84d907afd4bf083ccf01c3cfdcb78f5f46"
   }
 }
