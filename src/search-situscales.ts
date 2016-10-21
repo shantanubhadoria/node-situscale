@@ -1,4 +1,4 @@
-import { SituScale } from "./situscale";
+import { SituScale } from "./situ-scale";
 
 /* tslint:disable:no-console */
 SituScale.searchScales((scale) => {
