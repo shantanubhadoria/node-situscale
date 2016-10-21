@@ -16,7 +16,16 @@
     "website": "https://www.shantanubhadoria.com"
   },
   "keywords": [
-    ""
+    "situscale",
+    "bluetooth",
+    "weighing",
+    "scale",
+    "bluetooth",
+    "smart",
+    "bluetooth",
+    "low",
+    "energy",
+    "BLE"
   ],
   "files": [
     "lib"
@@ -30,7 +39,7 @@
     "test": "npm run build && mocha --compilers ts:ts-node/register --recursive test/**/*-spec.ts",
     "watch": "npm run build -- --watch",
     "watch:test": "npm run test -- --watch",
-    "search": "npm run build && node lib/search.js"
+    "search": "npm run build && node lib/search-situscales.js"
   },
   "dependencies": {
     "noble": "^1.7.0"
