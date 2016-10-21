@@ -66,7 +66,7 @@ SituScale.searchScales(function (scale) {
 });
 ```
 
-```ts
+```typescript
 // discover.ts or ES2015
 import { SituScale } from "situscale";
 
