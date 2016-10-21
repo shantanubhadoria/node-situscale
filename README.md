@@ -16,13 +16,13 @@ This package allows you to set up asynchronous notifications for weight update n
 ### Ubuntu/Debian/Raspbian
 
 ```shell
-sudo apt-get install bluetooth bluez libbluetooth-dev libudev-dev
+$ sudo apt-get install bluetooth bluez libbluetooth-dev libudev-dev
 ```
 
 ### Fedora/RPM Based
 
 ```shell
-sudo yum install bluez bluez-libs bluez-libs-devel
+$ sudo yum install bluez bluez-libs bluez-libs-devel
 ```
 
 ## Install
@@ -32,7 +32,29 @@ You can install this package with `npm`.
 ### npm
 
 ```shell
-npm install situscale
+$ npm install situscale
+```
+
+## Using the command line helper
+When you install this module, you will also find a new command available to you to test if you are able to detect situscales in your vicinity.
+
+```shell
+$ search-situscales
+  Discovered SITU scale with address:  c6:e3:c7:5e:fd:fc
+  0 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  0 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  0 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  0 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  0 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  627 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  627 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  627 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  1165 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  1165 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  1165 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  522 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  522 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
+  522 'Received from scale with address' 'c6:e3:c7:5e:fd:fc'
 ```
 
 ## Synopsis
@@ -41,7 +63,6 @@ var SituScale = require('situscale');
 
 var scaleInstance = new SituScale(address);
 ```
-
 
 ## Discovering Situscales in your vicinity
 You can discover situscales in your vicinity using this module if you do not have the address for your situscale.
@@ -66,7 +87,7 @@ SituScale.searchScales(function (scale) {
 });
 ```
 
-```typescript
+```ts
 // discover.ts or ES2015
 import { SituScale } from "situscale";
 
