@@ -2,6 +2,6 @@
   "name": "node-situscale",
   "dependencies": {},
   "globalDependencies": {
-    "noble": "registry:dt/noble#0.0.0+20160406120732"
+    "noble": "github:shantanubhadoria/DefinitelyTyped/noble/noble.d.ts#d28eff84d907afd4bf083ccf01c3cfdcb78f5f46"
   }
 }

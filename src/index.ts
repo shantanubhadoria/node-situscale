@@ -1,3 +1,3 @@
-import { SituScale } from "./situscale";
+import { SituScale } from "./situ-scale";
 
 export { SituScale };

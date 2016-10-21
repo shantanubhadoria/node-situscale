@@ -9,9 +9,9 @@
     "removeComments": true
   },
   "files": [
-    "typings/index.d.ts"
   ],
   "include": [
+    "typings/**/*",
     "src/**/*"
   ],
   "exclude": [
