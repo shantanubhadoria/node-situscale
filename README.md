@@ -2,9 +2,11 @@
 Node.js interface for reading data from SITU® Smart Food Nutrition Scale over a bluetooth low energy connection.
 
 ## Badges
+[![npm version](https://badge.fury.io/js/situscale.svg)](https://badge.fury.io/js/situscale)
 [![bitHound Overall Score](https://www.bithound.io/github/shantanubhadoria/node-situscale/badges/score.svg)](https://www.bithound.io/github/shantanubhadoria/node-situscale)
 [![bitHound Dependencies](https://www.bithound.io/github/shantanubhadoria/node-situscale/badges/dependencies.svg)](https://www.bithound.io/github/shantanubhadoria/node-situscale/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/shantanubhadoria/node-situscale/badges/code.svg)](https://www.bithound.io/github/shantanubhadoria/node-situscale)
+[![Gratipay Tips](https://img.shields.io/gratipay/shantanubhadoria.svg)](https://gratipay.com/shantanubhadoria)
 
 ## Description
 This package allows you to set up asynchronous notifications for weight update notifications from SITU scale.
