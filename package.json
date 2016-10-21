@@ -1,6 +1,6 @@
 {
   "name": "situscale",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Node.js interface for reading data from Situscale bluetooth weighing scale (http://situscale.com/).",
   "license": "MIT",
   "repository": {
@@ -28,7 +28,8 @@
     "BLE"
   ],
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -40,6 +41,9 @@
     "watch": "npm run build -- --watch",
     "watch:test": "npm run test -- --watch",
     "search": "npm run build && node lib/search-situscales.js"
+  },
+  "bin": {
+    "search-situscales": "./bin/search-situscales.js"
   },
   "dependencies": {
     "noble": "^1.7.0"
